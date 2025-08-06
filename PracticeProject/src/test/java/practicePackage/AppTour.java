@@ -28,7 +28,6 @@ public class AppTour extends BaseClass2{
 		
 		System.out.println("App tour completed successfully!!!");
 		
-		Thread.sleep(2000);
 		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Claim Now\"]")).click();
 		
 		System.out.println("Daily login claim successfully!!!");

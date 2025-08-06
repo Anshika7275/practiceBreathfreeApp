@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicePackage.HomePage">
+      <class name="practicePackage.ProfileUpdateTest">
         <methods>
           <include name="startApp"/>
-          <include name="bottomTabTest"/>
+          <include name="profileUpdateTest"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- practicePackage.HomePage -->
+      </class> <!-- practicePackage.ProfileUpdateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

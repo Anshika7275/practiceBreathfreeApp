@@ -34,7 +34,7 @@ public class BaseClass2 {
 	@org.testng.annotations.AfterClass
 	public void closeApp()
 	{
-		driver.terminateApp("breathefree.lung.health.asthma.breathing");
+		//driver.terminateApp("breathefree.lung.health.asthma.breathing");
 	}
 	
 

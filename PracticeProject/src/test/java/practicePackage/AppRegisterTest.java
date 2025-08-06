@@ -8,7 +8,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
-public class AppLogin extends BaseClass2 {
+public class AppRegisterTest extends BaseClass2 {
 
 	@Test
 	public void LoginToApp() throws Throwable {
