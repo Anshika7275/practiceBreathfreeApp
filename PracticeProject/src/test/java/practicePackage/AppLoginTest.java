@@ -47,6 +47,7 @@ public class AppLoginTest extends BaseClass2{
 
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))"
 				+ ".scrollIntoView(new UiSelector().text(\"Logout\"))"));
+		
 		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Logout\"]")).click();
 		
 		System.out.println("Logout successfully!!!!");
