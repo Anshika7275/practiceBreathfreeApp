@@ -1,4 +1,4 @@
-package practicePackage;
+package practicePackageOld;
 
 import org.testng.annotations.Test;
 
