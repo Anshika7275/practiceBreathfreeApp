@@ -2,20 +2,20 @@
 <testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-02T12:57:53 IST" name="Default suite" finished-at="2025-09-02T12:58:26 IST" duration-ms="32565">
+  <suite started-at="2025-09-02T16:23:32 IST" name="Default suite" finished-at="2025-09-02T16:23:55 IST" duration-ms="23450">
     <groups>
     </groups>
-    <test started-at="2025-09-02T12:57:53 IST" name="Default test" finished-at="2025-09-02T12:58:26 IST" duration-ms="32565">
+    <test started-at="2025-09-02T16:23:32 IST" name="Default test" finished-at="2025-09-02T16:23:55 IST" duration-ms="23450">
       <class name="practicePackage.AppRegister_SomeOneElseTest">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T12:57:53 IST" name="startApp" finished-at="2025-09-02T12:57:59 IST" duration-ms="5938" status="PASS">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T16:23:32 IST" name="startApp" finished-at="2025-09-02T16:23:44 IST" duration-ms="12588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="detailsStep1()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T12:57:59 IST" name="detailsStep1" finished-at="2025-09-02T12:58:26 IST" duration-ms="26579" status="PASS">
+        <test-method signature="detailsStep3()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T16:23:44 IST" name="detailsStep3" finished-at="2025-09-02T16:23:55 IST" duration-ms="10696" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- detailsStep1 -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T12:58:26 IST" name="closeApp" finished-at="2025-09-02T12:58:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- detailsStep3 -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.AppRegister_SomeOneElseTest@69453e37]" started-at="2025-09-02T16:23:55 IST" name="closeApp" finished-at="2025-09-02T16:23:55 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

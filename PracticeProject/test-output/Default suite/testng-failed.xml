@@ -5,8 +5,12 @@
     <classes>
       <class name="practicePackage.AppRegister_SomeOneElseTest">
         <methods>
-          <include name="loginToAccount"/>
+          <include name="LoginToApp"/>
+          <include name="detailsStep1"/>
+          <include name="detailsStep2"/>
+          <include name="detailsStep3"/>
           <include name="startApp"/>
+          <include name="skipFTUX"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- practicePackage.AppRegister_SomeOneElseTest -->

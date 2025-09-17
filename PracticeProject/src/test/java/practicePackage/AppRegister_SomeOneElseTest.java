@@ -23,10 +23,10 @@ public class AppRegister_SomeOneElseTest extends BaseClass2 {
 		//driver.findElement(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Cancel\"]")).click();
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.xpath(
-				"//android.widget.ImageView[@content-desc=\"Cancel\"]")))
+		wait.until(ExpectedConditions
+				.presenceOfElementLocated(AppiumBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.google.android.gms:id/phone_number_list_item\"])[1]")))
 				.click();
-		
+
 		WebElement ph_no = driver.findElement(AppiumBy.xpath("//android.widget.EditText"));
 		ph_no.clear();
 		ph_no.sendKeys("9999999905");
@@ -153,6 +153,11 @@ public class AppRegister_SomeOneElseTest extends BaseClass2 {
 				.click();
 
 		System.out.println("Successfully enter the conditions!!!!");
+		
+		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Diabetes\"]")).click();
+		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text=\"Next\"]")).click();
+		
+		
 	}
 
 	@Test
@@ -170,10 +175,17 @@ public class AppRegister_SomeOneElseTest extends BaseClass2 {
 	@Test
 	public void skipFTUX() throws Throwable {
 
-		Thread.sleep(4000);
-		driver.findElement(AppiumBy.xpath(
-				"//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"))
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.xpath(
+				"//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]")))
 				.click();
+
+//		Thread.sleep(4000);
+//		
+//		driver.findElement(AppiumBy.xpath(
+//				"//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"))
+//				.click();
 		
 		System.out.println("FTUX skipped successfully!!!!");
 
