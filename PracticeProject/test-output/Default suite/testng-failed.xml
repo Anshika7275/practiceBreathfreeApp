@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicePackage.AppRegister_SomeOneElseTest">
+      <class name="practicePackageHomePage.HomePage">
         <methods>
-          <include name="LoginToApp"/>
-          <include name="detailsStep1"/>
-          <include name="detailsStep2"/>
-          <include name="detailsStep3"/>
           <include name="startApp"/>
-          <include name="skipFTUX"/>
+          <include name="doctorCorner"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- practicePackage.AppRegister_SomeOneElseTest -->
+      </class> <!-- practicePackageHomePage.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
