@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicePackageHomePage.NewCarePlusPageTest">
+      <class name="appWidgetPackage.AddWidgteTest">
         <methods>
-          <include name="trackVitals_Activities"/>
-          <include name="understandYourSymptoms"/>
           <include name="startApp"/>
+          <include name="clickOnInhalerWidgetTest"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- practicePackageHomePage.NewCarePlusPageTest -->
+      </class> <!-- appWidgetPackage.AddWidgteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
