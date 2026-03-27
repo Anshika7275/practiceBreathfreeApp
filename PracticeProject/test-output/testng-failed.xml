@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appWidgetPackage.RedirectionOfAppWidgetTest">
+      <class name="practicePackage.FullScreenTimeBasedScenarioTest">
         <methods>
           <include name="startApp"/>
-          <include name="redirectionWidget_OtherAndInhalerTest"/>
+          <include name="healthCheckIns_SkipTest"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- appWidgetPackage.RedirectionOfAppWidgetTest -->
+      </class> <!-- practicePackage.FullScreenTimeBasedScenarioTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
