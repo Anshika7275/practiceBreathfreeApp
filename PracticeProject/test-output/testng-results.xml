@@ -1,51 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-27T15:38:10 IST" name="Default suite" finished-at="2026-03-27T15:38:39 IST" duration-ms="28521">
+  <suite started-at="2026-04-14T15:42:22 IST" name="Default suite" finished-at="2026-04-14T15:43:00 IST" duration-ms="37989">
     <groups>
     </groups>
-    <test started-at="2026-03-27T15:38:10 IST" name="Default test" finished-at="2026-03-27T15:38:39 IST" duration-ms="28521">
-      <class name="practicePackage.FullScreenTimeBasedScenarioTest">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.FullScreenTimeBasedScenarioTest@37ceb1df]" started-at="2026-03-27T15:38:10 IST" name="startApp" finished-at="2026-03-27T15:38:23 IST" duration-ms="12943" status="PASS">
+    <test started-at="2026-04-14T15:42:22 IST" name="Default test" finished-at="2026-04-14T15:43:00 IST" duration-ms="37989">
+      <class name="practicePackage.ProfileUpdatePrefrence_AssertionTest">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.ProfileUpdatePrefrence_AssertionTest@20d525]" started-at="2026-04-14T15:42:22 IST" name="startApp" finished-at="2026-04-14T15:42:34 IST" duration-ms="11999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="healthCheckIns_SkipTest()[pri:0, instance:practicePackage.FullScreenTimeBasedScenarioTest@37ceb1df]" started-at="2026-03-27T15:38:23 IST" name="healthCheckIns_SkipTest" finished-at="2026-03-27T15:38:39 IST" duration-ms="15429" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyCohortAndInhalerUpdate()[pri:0, instance:practicePackage.ProfileUpdatePrefrence_AssertionTest@20d525]" started-at="2026-04-14T15:42:34 IST" name="verifyCohortAndInhalerUpdate" finished-at="2026-04-14T15:43:00 IST" duration-ms="25831" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [83f268b4-1b0f-42c6-8fe2-46040fa487ca, findElement {using=xpath, value=//android.widget.TextView[@text="skip"]}]
-Capabilities {appium:appWaitActivity: *, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appWaitActivity: *, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Device, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 220333QBI, appium:deviceName: c306f7d0, appium:deviceScreenDensity: 256, appium:deviceScreenSize: 720x1650, appium:deviceUDID: c306f7d0, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.6, appium:platformVersion: 13, appium:statBarHeight: 49, appium:takesScreenshot: true, appium:viewportRect: {height: 1601, left: 0, top: 49, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 83f268b4-1b0f-42c6-8fe2-46040fa487ca]]>
+              <![CDATA[Inhaler section not present → Skipping test]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [83f268b4-1b0f-42c6-8fe2-46040fa487ca, findElement {using=xpath, value=//android.widget.TextView[@text="skip"]}]
-Capabilities {appium:appWaitActivity: *, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appWaitActivity: *, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Android Device, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 220333QBI, appium:deviceName: c306f7d0, appium:deviceScreenDensity: 256, appium:deviceScreenSize: 720x1650, appium:deviceUDID: c306f7d0, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.6, appium:platformVersion: 13, appium:statBarHeight: 49, appium:takesScreenshot: true, appium:viewportRect: {height: 1601, left: 0, top: 49, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 83f268b4-1b0f-42c6-8fe2-46040fa487ca
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at practicePackage.FullScreenTimeBasedScenarioTest.healthCheckIns_SkipTest(FullScreenTimeBasedScenarioTest.java:21)
+              <![CDATA[org.testng.SkipException: Inhaler section not present → Skipping test
+at practicePackage.ProfileUpdatePrefrence_AssertionTest.verifyCohortAndInhalerUpdate(ProfileUpdatePrefrence_AssertionTest.java:93)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -74,15 +47,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- healthCheckIns_SkipTest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.FullScreenTimeBasedScenarioTest@37ceb1df]" started-at="2026-03-27T15:38:39 IST" name="closeApp" finished-at="2026-03-27T15:38:39 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyCohortAndInhalerUpdate -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.ProfileUpdatePrefrence_AssertionTest@20d525]" started-at="2026-04-14T15:43:00 IST" name="closeApp" finished-at="2026-04-14T15:43:00 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- practicePackage.FullScreenTimeBasedScenarioTest -->
+      </class> <!-- practicePackage.ProfileUpdatePrefrence_AssertionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
