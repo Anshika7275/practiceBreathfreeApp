@@ -1,6 +1,8 @@
 package practicePackage;
 
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -63,25 +65,25 @@ public class ProfileUpdatePrefrenceTest extends BaseClass2 {
 	@Test(priority = 3)
 	public void cohortChangeTest() {
 
-		String text = "Asthma";
+		String text = "ILD";
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		By profileIcon = AppiumBy.xpath("//android.widget.TextView[string-length(@text)=1]/parent::android.view.ViewGroup");
-
-		// Click profile (fresh find)
+		By profileIcon = AppiumBy.xpath("//android.view.ViewGroup[@content-desc]/android.view.ViewGroup");
+		
+		// Step 2: Click Profile icon
 		WebElement profile = wait.until(ExpectedConditions.presenceOfElementLocated(profileIcon));
 
 		((JavascriptExecutor) driver).executeScript("mobile: clickGesture",
 				Map.of("elementId", ((RemoteWebElement) profile).getId()));
 
-		// driver.findElement(AppiumBy.xpath("//android.view.ViewGroup[@content-desc]/android.view.ViewGroup")).click();
+		System.out.println("Profile icon clicked");
 
 		// 4. Click "Have a lung condition"
-		By conditionOption = AppiumBy.xpath("//android.view.ViewGroup[contains(@content-desc,'lung condition')]");
+		By lungCondition = AppiumBy.xpath("//android.view.ViewGroup[contains(@content-desc,'Lung condition')]");
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(conditionOption)).click();
-
-		By cohortOption = AppiumBy.xpath("//android.widget.TextView[@text='" + text + "']");
+		wait.until(ExpectedConditions.elementToBeClickable(lungCondition)).click();
+	
+		By cohortOption = AppiumBy.xpath("//android.view.ViewGroup[contains(@content-desc,'" + text + "')]");
 		wait.until(ExpectedConditions.presenceOfElementLocated(cohortOption)).click();
 
 		// Duration
@@ -95,9 +97,68 @@ public class ProfileUpdatePrefrenceTest extends BaseClass2 {
 	
 	@Test(priority = 4)
 	public void SymptomsChange() {
-			
 		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// ---------- LOCATORS ----------
+		By profileIcon = AppiumBy.xpath("//android.widget.TextView[string-length(@text)=1]/parent::android.view.ViewGroup");
+		By symptomsSection = AppiumBy.xpath("//android.view.ViewGroup[contains(@content-desc,'Symptoms')]");
+
+		// ---------- STEP 1: CHECK CURRENT SCREEN ----------
+		List<WebElement> isSymptomsVisible = driver.findElements(symptomsSection);
+
+		if (isSymptomsVisible.isEmpty()) {
+		    // Not on profile → go to profile
+
+		    System.out.println("User on Home → Navigating to Profile");
+
+		    WebElement profile = wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+
+		    ((JavascriptExecutor) driver).executeScript("mobile: clickGesture", Map.of(
+		            "elementId", ((RemoteWebElement) profile).getId()
+		    ));
+
+		} else {
+		    System.out.println("User already on Profile screen");
+		}
+
+		// ---------- STEP 2: CLICK SYMPTOMS ----------
+		WebElement symptoms = wait.until(ExpectedConditions.elementToBeClickable(symptomsSection));
+		symptoms.click();
+
+		// ---------- STEP 3: SELECT MULTIPLE SYMPTOMS ----------
+		List<String> symptomsList = Arrays.asList(
+		        "Breathlessness", "Wheezing", "Cough",
+		        "Heavy Breathing", "Sneezing", "Chest Pain"
+		);
+
+		for (String chooseSymptom : symptomsList) {
+
+		    By locator = AppiumBy.xpath("//android.view.ViewGroup[@content-desc='" + chooseSymptom + "']");
+
+		    try {
+		        WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		        el.click();
+		    } catch (Exception e) {
+		        System.out.println("Skipping symptom: " + chooseSymptom);
+		    }
+		}
+
+		// ---------- STEP 4: CLICK SUBMIT (STABLE WAY) ----------
+		By submitCTA = AppiumBy.xpath("//android.view.ViewGroup[contains(@content-desc,'Submit')]");
+
+		for (int i = 0; i < 3; i++) {
+		    try {
+		        WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(submitCTA));
+		        submit.click();
+		        break;
+		    } catch (Exception e) {
+		        System.out.println("Retry Submit click...");
+		    }
+		}
+			
 	}
+	
 	
 	@Test(priority = 5)
 	public void inhalerUse() {
