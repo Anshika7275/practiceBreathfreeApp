@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-23T16:30:34 IST" name="Default suite" finished-at="2026-04-23T16:31:31 IST" duration-ms="57248">
+  <suite started-at="2026-05-18T12:04:01 IST" name="Default suite" finished-at="2026-05-18T12:05:01 IST" duration-ms="59286">
     <groups>
     </groups>
-    <test started-at="2026-04-23T16:30:34 IST" name="Default test" finished-at="2026-04-23T16:31:31 IST" duration-ms="57248">
-      <class name="practicePackage.ProfileUpdatePrefrenceTest">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.ProfileUpdatePrefrenceTest@43c1b556]" started-at="2026-04-23T16:30:34 IST" name="startApp" finished-at="2026-04-23T16:30:41 IST" duration-ms="6751" status="PASS">
+    <test started-at="2026-05-18T12:04:01 IST" name="Default test" finished-at="2026-05-18T12:05:01 IST" duration-ms="59286">
+      <class name="practicePackage.ChangeInhalerDosagesTest">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:01 IST" name="startApp" finished-at="2026-05-18T12:04:08 IST" duration-ms="6552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="SymptomsChange()[pri:4, instance:practicePackage.ProfileUpdatePrefrenceTest@43c1b556]" started-at="2026-04-23T16:30:41 IST" name="SymptomsChange" finished-at="2026-04-23T16:31:31 IST" duration-ms="50446" status="PASS">
+        <test-method signature="clickOnHomeeTab()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:08 IST" name="clickOnHomeeTab" finished-at="2026-05-18T12:04:25 IST" duration-ms="17390" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SymptomsChange -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.ProfileUpdatePrefrenceTest@43c1b556]" started-at="2026-04-23T16:31:31 IST" name="closeApp" finished-at="2026-04-23T16:31:31 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- clickOnHomeeTab -->
+        <test-method signature="inhalerHubTest()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:25 IST" name="inhalerHubTest" finished-at="2026-05-18T12:05:01 IST" duration-ms="35288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inhalerHubTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:05:01 IST" name="closeApp" finished-at="2026-05-18T12:05:01 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- practicePackage.ProfileUpdatePrefrenceTest -->
+      </class> <!-- practicePackage.ChangeInhalerDosagesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
