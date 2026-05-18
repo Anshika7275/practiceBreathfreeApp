@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicePackage.ChangeInhalerDosagesTest">
+      <class name="practicePackage.AppRegisterTest2">
         <methods>
-          <include name="inhalerHubTest"/>
           <include name="startApp"/>
+          <include name="onboardingFlow"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- practicePackage.ChangeInhalerDosagesTest -->
+      </class> <!-- practicePackage.AppRegisterTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-18T12:04:01 IST" name="Default suite" finished-at="2026-05-18T12:05:01 IST" duration-ms="59286">
+  <suite started-at="2026-05-18T15:01:42 IST" name="Default suite" finished-at="2026-05-18T15:03:33 IST" duration-ms="111494">
     <groups>
     </groups>
-    <test started-at="2026-05-18T12:04:01 IST" name="Default test" finished-at="2026-05-18T12:05:01 IST" duration-ms="59286">
-      <class name="practicePackage.ChangeInhalerDosagesTest">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:01 IST" name="startApp" finished-at="2026-05-18T12:04:08 IST" duration-ms="6552" status="PASS">
+    <test started-at="2026-05-18T15:01:42 IST" name="Default test" finished-at="2026-05-18T15:03:33 IST" duration-ms="111494">
+      <class name="practicePackage.AppRegisterTest2">
+        <test-method is-config="true" signature="startApp()[pri:0, instance:practicePackage.AppRegisterTest2@22fcf7ab]" started-at="2026-05-18T15:01:42 IST" name="startApp" finished-at="2026-05-18T15:01:53 IST" duration-ms="11133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="clickOnHomeeTab()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:08 IST" name="clickOnHomeeTab" finished-at="2026-05-18T12:04:25 IST" duration-ms="17390" status="PASS">
+        <test-method signature="onboardingFlow()[pri:0, instance:practicePackage.AppRegisterTest2@22fcf7ab]" started-at="2026-05-18T15:01:53 IST" name="onboardingFlow" finished-at="2026-05-18T15:03:33 IST" duration-ms="100214" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnHomeeTab -->
-        <test-method signature="inhalerHubTest()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:04:25 IST" name="inhalerHubTest" finished-at="2026-05-18T12:05:01 IST" duration-ms="35288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inhalerHubTest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.ChangeInhalerDosagesTest@7c9d8e2]" started-at="2026-05-18T12:05:01 IST" name="closeApp" finished-at="2026-05-18T12:05:01 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- onboardingFlow -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:practicePackage.AppRegisterTest2@22fcf7ab]" started-at="2026-05-18T15:03:33 IST" name="closeApp" finished-at="2026-05-18T15:03:33 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- practicePackage.ChangeInhalerDosagesTest -->
+      </class> <!-- practicePackage.AppRegisterTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
